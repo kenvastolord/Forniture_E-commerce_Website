@@ -75,7 +75,6 @@
 
 .btn {
   display: inline-block;
-  margin: 1rem;
   border-radius: 5rem;
   background-color: var(--gray);
   color: var(--white);
@@ -152,7 +151,7 @@
 }
 
 .about__video-container {
-  flex: 1 1 4rem;
+  flex: 1 1 40rem;
   position: relative;
 }
 
@@ -175,6 +174,25 @@
   width: 100%;
   padding: 0.5rem 2rem;
   text-align: center;
+  mix-blend-mode: screen;
+}
+
+.about__info {
+  flex: 1 1 40rem;
+}
+
+.about__info-title {
+  font-size: 3rem;
+  color: var(--gray);
+
+}
+
+.about__info-text {
+  font-size: 1.5rem;
+  color: #888;
+  padding: 0.5rem 0;
+  padding-top: 1rem;
+  line-height: 1.5;
 }
 
 @media screen and (max-width: 580px) {
