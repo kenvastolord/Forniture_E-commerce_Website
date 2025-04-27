@@ -1,74 +1,96 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Forniture E-commerce</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link href="assets/css/style.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="header__logo">
-        <a href="/" class="header__logo-link">Store <span>.</span></a>
-      </div>
-      <!-- Hamburger Icon (Visible on mobile) -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Forniture E-commerce</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="assets/css/style.css" rel="stylesheet" />
+</head>
 
-      <div class="header__icons">
+<body>
+  <header class="header">
+    <div class="header__logo">
+      <a href="/" class="header__logo-link">Store <span>.</span></a>
+    </div>
+    <!-- Hamburger Icon (Visible on mobile) -->
+
+    <div class="header__icons">
+      <a href="#" class="header__icon-link">
+        <i class="fa-solid fa-cart-shopping header__icon"></i>
+      </a>
+      <div class="header__menu-toggle">
         <a href="#" class="header__icon-link">
-          <i class="fa-solid fa-cart-shopping header__icon"></i>
+          <i class="fa-solid fa-bars header__icon header__icon-openMenu" id="openMenu"></i>
         </a>
-        <div class="header__menu-toggle">
-          <a href="#" class="header__icon-link">
-            <i
-              class="fa-solid fa-bars header__icon header__icon-openMenu"
-              id="openMenu"
-            ></i>
-          </a>
-          <a href="#" class="header__icon-link">
-            <i
-              class="fa-solid fa-xmark header__icon header__icon-closeMenu"
-              id="closeMenu"
-            ></i>
-          </a>
-        </div>
+        <a href="#" class="header__icon-link">
+          <i class="fa-solid fa-xmark header__icon header__icon-closeMenu" id="closeMenu"></i>
+        </a>
       </div>
-      <nav class="navbar">
-        <ul class="navbar__list">
-          <li class="navbar__item">
-            <a href="#home" class="navbar__link">Home </a>
-          </li>
-          <li class="navbar__item">
-            <a href="#about" class="navbar__link">About </a>
-          </li>
-          <li class="navbar__item">
-            <a href="#products" class="navbar__link">Products </a>
-          </li>
-          <li class="navbar__item">
-            <a href="#contact" class="navbar__link">Contact </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <script src="assets/js/main.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    </div>
+    <nav class="navbar">
+      <ul class="navbar__list">
+        <li class="navbar__item">
+          <a href="#home" class="navbar__link">Home </a>
+        </li>
+        <li class="navbar__item">
+          <a href="#about" class="navbar__link">About </a>
+        </li>
+        <li class="navbar__item">
+          <a href="#products" class="navbar__link">Products </a>
+        </li>
+        <li class="navbar__item">
+          <a href="#contact" class="navbar__link">Contact </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Home main content -->
+  <section class="home">
+    <div class="home__content">
+      <h3 class="home__title">High Quality Products</h3>
+      <span class="home__subtitle">Natural & Elegant</span>
+      <p class="home__description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+        blanditiis perspiciatis ipsam totam odit quia vel quis debitis maxime
+        sapiente. Temporibus natus ratione, qui obcaecati aperiam cupiditate
+        aspernatur eaque beatae!
+      </p>
+
+      <a href="#" class="btn home__btn">Shop Now</a>
+    </div>
+  </section>
+  <!-- About Section    -->
+  <section class="about">
+    <h1 class="about__title">
+      <span class="about__title-highlight">About</span> Us
+    </h1>
+
+    <div class="about__content">
+      <div class="about__video-container">
+        <video class="about__video" src="./assets/images/forniture_2.mp4" autoplay muted loop> </video>
+        <h3 class="about__video-caption">Best Products</h3>
+      </div>
+
+      <div class="about__info">
+        <h3 class="about__info-title">why choose us</h3>
+        <p class="about__info-text">Lorem ipsum dolor sit amet.</p>
+        <p class="about__info-text">Lorem ipsum dolor sit amet.</p>
+        <a href="#" class=" btn about__btn">Learn More</a>
+      </div>
+    </div>
+
+  </section>
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
