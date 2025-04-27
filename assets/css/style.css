@@ -1,5 +1,7 @@
 :root {
   --pink: #e84393;
+  --white: #fff;
+  --gray: #333;
 }
 
 .header {
@@ -16,7 +18,7 @@
 
 .header__logo-link {
   font-size: 3rem;
-  color: #333;
+  color: var(--gray);
   font-weight: bolder;
 }
 
@@ -36,7 +38,7 @@
 
 .header__icon {
   font-size: 2rem;
-  color: #333;
+  color: var(--gray);
 }
 
 .header__icon:hover {
@@ -71,6 +73,110 @@
   padding: 0;
 }
 
+.btn {
+  display: inline-block;
+  margin: 1rem;
+  border-radius: 5rem;
+  background-color: var(--gray);
+  color: var(--white);
+  padding: 1rem 3.5rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+  text-decoration: none;
+}
+
+.home {
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+  background-image: url("../images/home_background2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.home__content {
+  max-width: 50rem;
+  background: #000;
+  padding: 20px;
+  opacity: 0.7;
+}
+
+.home__title {
+  font-size: 5rem;
+  color: var(--white);
+}
+
+.home__subtitle {
+  font-size: 3.5rem;
+  color: var(--pink);
+}
+
+.home__description {
+  font-size: 1.5rem;
+  color: var(--white);
+  padding: 1rem;
+}
+
+
+.home__btn:hover {
+  color: var(--white);
+  background-color: var(--pink);
+  transition: 0.3s ease;
+}
+
+.about {
+  padding: 2rem 9%;
+}
+
+.about__title {
+  text-align: center;
+  font-size: 4rem;
+  color: var(--gray);
+  padding: 1rem;
+  margin: 2rem 0;
+  background-color: rgba(255, 51, 153, 0.05);
+
+}
+
+.about__title-highlight {
+  color: var(--pink);
+}
+
+.about__content {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+}
+
+.about__video-container {
+  flex: 1 1 4rem;
+  position: relative;
+}
+
+.about__video {
+  width: 100%;
+  border: 1.5rem solid var(--white);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgb(0, 0, 0.1);
+  height: 100%;
+  object-fit: cover;
+}
+
+.about__video-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  background-color: var(--white);
+  color: var(--gray);
+  width: 100%;
+  padding: 0.5rem 2rem;
+  text-align: center;
+}
+
 @media screen and (max-width: 580px) {
   .navbar {
     display: none;
@@ -78,13 +184,15 @@
     top: 100%;
     left: 0;
     right: 0;
-    background: #fff;
+    background: var(--white);
     flex-direction: column;
     padding: 1rem;
+    transform: translateY(-30px);
+    z-index: 100;
   }
 
   .navbar.show {
-    display: block;
+    display: flex;
   }
 
   .navbar__list {
@@ -94,5 +202,9 @@
   .header__icon-openMenu.show,
   .header__icon-closeMenu.show {
     display: block;
+  }
+
+  .about__info {
+    text-align: center;
   }
 }
