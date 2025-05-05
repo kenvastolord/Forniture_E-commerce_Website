@@ -4,11 +4,23 @@
   --gray: #333;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   position: relative;
 }
 
@@ -125,7 +137,8 @@
 }
 
 .about {
-  padding: 2rem 9%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .about__title {
@@ -195,6 +208,7 @@
   line-height: 1.5;
 }
 
+
 @media screen and (max-width: 580px) {
   .navbar {
     display: none;
@@ -220,6 +234,10 @@
   .header__icon-openMenu.show,
   .header__icon-closeMenu.show {
     display: block;
+  }
+
+  .home {
+    padding: 0;
   }
 
   .about__info {
