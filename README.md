@@ -14,6 +14,12 @@ Fully responsive layout with mobile navigation support:
 - JavaScript (Vanilla)
 - Font Awesome (Icons)
 
+## 🚀 Live Demo
+
+👉 Check out the live version of this project here:  
+[**🔗 MyShop Demo**](https://kenvastolord.github.io/Forniture_E-commerce_Website/)
+
+
 ## 📸 Screenshots
 
 | Home Preview | Product Preview |
