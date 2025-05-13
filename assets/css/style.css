@@ -347,7 +347,58 @@ body {
   font-size: 1.5rem;
   color: #999;
   text-decoration: line-through;
+
 }
+
+.footer {
+  background-color: var(--gray);
+  color: var(--white);
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer__logo {
+  font-size: 2.5rem;
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer__logo:visited {
+  text-decoration: none;
+}
+
+.footer__logo span {
+  color: var(--pink);
+}
+
+.footer__text {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  color: #ccc;
+}
+
+.footer__socials {
+  margin-top: 1rem;
+}
+
+.footer__socials a {
+  color: var(--white);
+  margin: 0 1rem;
+  font-size: 1.8rem;
+  transition: color 0.3s ease;
+}
+
+.footer__socials a:hover {
+  color: var(--pink);
+}
+
 
 @media screen and (max-width: 580px) {
 
