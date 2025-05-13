@@ -14,3 +14,8 @@ Fully responsive layout with mobile navigation support:
 - JavaScript (Vanilla)
 - Font Awesome (Icons)
 
+## 📸 Screenshots
+
+| Home Preview | Product Preview |
+|-----------------|----------------|
+| ![Home](assets/images/mobile-preview.gif) | ![Product](assets/images/mobile_products-preview.gif) |
